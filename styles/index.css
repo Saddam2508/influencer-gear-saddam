@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* share styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* poppins-thin poppins-extralight poppins-light poppins-regular poppins-medium poppins-semibold poppins-bold poppins-extrabold poppins-black poppins-thin-italic poppins-extralight-italic poppins-light-italic poppins-regular-italic poppins-medium-italic poppins-semibold-italic poppins-bold-italic poppins-extrabold-italic poppins-black-italic */
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+header {
+  margin-bottom: 69px;
+}
+.container {
+  width: 91%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.text-3A {
+  color: #3a3a3a;
+}
+.btn {
+  background-color: #e02c6d;
+  border-radius: 41px;
+  border: none;
+  padding: 10px 24px;
+}
+main > section {
+  margin-bottom: 100px;
+}
+/* main styles */
+/* header section */
+header {
+  margin-top: 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.menu li a img {
+  width: 24px;
+  height: 24px;
+}
+/* banner section */
+#banner {
+  margin-top: 50px;
+}
+
+.btn-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-banner span {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-content {
+  max-width: 582px;
+}
+.banner-content h2 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.banner-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.banner-img img {
+  width: 100%;
+  background-image: url(/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+}
+
+/* all icon section */
+.icon-container {
+  padding: 36px 62px;
+}
+.icon-box {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  border: 1px solid #d9dfe9;
+  padding: 36px 62px;
+}
