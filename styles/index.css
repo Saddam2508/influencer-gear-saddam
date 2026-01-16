@@ -45,6 +45,10 @@
   font-style: normal;
 }
 
+body {
+  background-color: #d2d2d2;
+}
+
 header {
   margin-bottom: 69px;
 }
@@ -70,10 +74,11 @@ main > section {
 header {
   margin-top: 50px;
 }
-nav {
+.desktop-nav {
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -92,6 +97,31 @@ nav {
   width: 24px;
   height: 24px;
 }
+
+/* mobile nav bar */
+.mobile-nav {
+  display: none;
+  justify-content: space-between;
+}
+.mobile-nav .nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+}
+.mobile-menu li a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.mobile-nav-img img {
+  width: 24px;
+  height: 24px;
+}
+
 /* banner section */
 #banner {
   margin-top: 50px;
@@ -130,6 +160,7 @@ nav {
   width: 100%;
   background-image: url(/images/Circle\ design.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* all icon section */
@@ -142,4 +173,152 @@ nav {
   justify-content: center;
   border: 1px solid #d9dfe9;
   padding: 36px 62px;
+}
+
+/* card section */
+
+.card-box-heading {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  padding: 17px 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 40 0 #000000;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+.card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.rating {
+  font-size: 18px;
+}
+
+.star {
+  display: flex;
+  gap: 3px;
+}
+.star img {
+  width: 16px;
+  height: 16px;
+}
+.card p {
+  color: #787885;
+}
+.card .world {
+  margin-bottom: 5px;
+}
+/* =====================
+   Responsive Devices
+===================== */
+
+/* Large Desktop / Laptop */
+@media screen and (max-width: 1200px) {
+  .icon-box {
+    gap: 27px;
+    padding: 36px 0px;
+  }
+}
+/* Large Laptop */
+@media screen and (max-width: 1024px) {
+  .icon-box {
+    gap: 20px;
+  }
+}
+
+/* Tablet (Landscape) */
+@media screen and (max-width: 992px) {
+  .banner-container {
+    gap: 20px;
+  }
+  .banner-content {
+    max-width: 400px;
+  }
+  .banner-content h2 {
+    font-size: 2.5rem;
+  }
+  .icon-box {
+    flex-wrap: wrap;
+  }
+}
+
+/* Tablet / Mobile (Portrait) */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+  .menu {
+    gap: 10px;
+  }
+  .menu li a {
+    font-size: 0.75rem;
+  }
+  .menu li a img {
+    width: 100%;
+  }
+  .card-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  main > section {
+    margin-bottom: 30px;
+  }
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .banner-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .banner-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  .card-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small Mobile (Very small devices) */
+@media screen and (max-width: 350px) {
 }
