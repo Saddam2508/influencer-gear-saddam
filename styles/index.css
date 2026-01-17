@@ -46,7 +46,7 @@
 }
 
 body {
-  background-color: #d2d2d2;
+  background-color: #f9f1f1;
 }
 
 header {
@@ -65,6 +65,10 @@ header {
   border-radius: 41px;
   border: none;
   padding: 10px 24px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #eecece;
 }
 main > section {
   margin-bottom: 100px;
@@ -361,6 +365,7 @@ footer {
 
 .footer-content {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .footer-content h2 {
@@ -374,6 +379,17 @@ footer {
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 4px;
+}
+.social a img {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 50px;
+}
+.social {
+  display: flex;
+  gap: 20px;
 }
 /* Mobile */
 @media screen and (max-width: 576px) {
